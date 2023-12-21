@@ -10,8 +10,17 @@
       "App/*": ["./app/*"],
       "Config/*": ["./config/*"],
       "Contracts/*": ["./contracts/*"],
-      "Database/*": ["./database/*"]
+      "Database/*": ["./database/*"],
+      "@shared/*": ["../../packages/shared/*"]
     },
-    "types": ["@adonisjs/core", "@adonisjs/repl", "@japa/preset-adonis/build/adonis-typings"]
+    "types": [
+      "@adonisjs/core",
+      "@adonisjs/repl",
+      "@japa/preset-adonis/build/adonis-typings",
+      "@adonisjs/lucid",
+      "@adonisjs/auth",
+      "@adonisjs/redis"
+    ],
+    "baseUrl": "./" // https://github.com/adonisjs/core/discussions/3878#discussioncomment-3446192
   }
 }
