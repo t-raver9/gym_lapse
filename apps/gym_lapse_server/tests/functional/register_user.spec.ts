@@ -24,7 +24,7 @@ test.group('Register user', (group) => {
     assert.exists(response.body().token.type)
   })
 
-  test('register with existing email', async ({ client }) => {
+  test('register with existing email throws a validation error', async ({ client }) => {
     const user = new User()
     user.email = 'test@test.com'
     user.password = 'password'
